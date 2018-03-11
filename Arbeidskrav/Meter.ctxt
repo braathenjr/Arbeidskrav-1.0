@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=Meter
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Meter\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Meter()
+comment10.params=
+comment10.target=boolean\ isWorks()
+comment2.params=regNumber\ placement\ works
+comment2.target=Meter(java.lang.String,\ java.lang.String,\ boolean)
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment4.params=o
+comment4.target=boolean\ equals(java.lang.Object)
+comment5.params=regNumber
+comment5.target=void\ setRegNumber(java.lang.String)
+comment6.params=
+comment6.target=java.lang.String\ getRegNumber()
+comment7.params=placement
+comment7.target=void\ setPlacement(java.lang.String)
+comment8.params=
+comment8.target=java.lang.String\ getPlacement()
+comment9.params=works
+comment9.target=void\ setWorks(boolean)
+numComments=11

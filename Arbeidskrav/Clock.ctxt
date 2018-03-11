@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Clock
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Clock\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Clock()
+comment2.params=regNumber\ placement\ works\ seconds
+comment2.target=Clock(java.lang.String,\ java.lang.String,\ boolean,\ double)
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment4.params=seconds
+comment4.target=void\ setSeconds(double)
+comment5.params=
+comment5.target=double\ getSeconds()
+numComments=6

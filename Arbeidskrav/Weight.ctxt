@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=Weight
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Weight\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Weight()
+comment2.params=regNumber\ placement\ works\ leastWeight\ mostWeight
+comment2.target=Weight(java.lang.String,\ java.lang.String,\ boolean,\ double,\ double)
+comment3.params=
+comment3.target=void\ display()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment5.params=leastWeight
+comment5.target=void\ setLeastWeight(double)
+comment6.params=
+comment6.target=double\ getLeastWeight()
+comment7.params=mostWeight
+comment7.target=void\ setMostWeight(double)
+comment8.params=
+comment8.target=double\ getMostWeight()
+numComments=9

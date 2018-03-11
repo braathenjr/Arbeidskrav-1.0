@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Thermometer
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Thermometer\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Thermometer()
+comment2.params=regNumber\ placement\ works\ lowest\ highest
+comment2.target=Thermometer(java.lang.String,\ java.lang.String,\ boolean,\ double,\ double)
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment4.params=highest
+comment4.target=void\ setHighest(double)
+comment5.params=
+comment5.target=double\ getHighest()
+comment6.params=
+comment6.target=double\ getLowest()
+comment7.params=lowest
+comment7.target=void\ setLowest(double)
+numComments=8
