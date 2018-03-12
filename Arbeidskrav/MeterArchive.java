@@ -31,7 +31,7 @@ public class MeterArchive
             if(regNumber.equals(list.getRegNumber()))
             {
                 archive.remove(i);
-                //System.out.println(": Objekt er slettet");
+                System.out.println("Sletter instrument med regnummer: " + list.getRegNumber());
                 return true;
             }
         }
@@ -47,6 +47,7 @@ public class MeterArchive
             if(regNumber.equals(list.getRegNumber()))
             {
                 archive.get(i);
+                //System.out.orintln("Henter instrument med regnummer " + list.getRegNumber());
                 System.out.println(list);
                 return list;
             }
@@ -59,11 +60,10 @@ public class MeterArchive
         for(int i = 0; i < archive.size(); i++)
         {
             Meter list = archive.get(i);
-
             if(regNumber.equals(list.getRegNumber()))
             {
                 archive.get(i).setPlacement(placement);
-
+                //System.out.println("Endrer posisjon for instrument med regnummer: " + list.getRegNumber());
                 System.out.println(list);              
                 return true;                                         
             }
@@ -76,12 +76,10 @@ public class MeterArchive
         for(int i = 0; i < archive.size(); i++)
         {
             Meter list = archive.get(i);
-
             if(regNumber.equals(list.getRegNumber()))
             {
                 archive.get(i).setWorks(false);
-
-                System.out.println(list);              
+                System.out.println("Setter instrumentet med regnummer " + list.getRegNumber() + " til ikke i orden");              
                 return true;                                         
             }
         }
