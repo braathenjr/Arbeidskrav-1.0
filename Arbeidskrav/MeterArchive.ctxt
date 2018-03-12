@@ -13,4 +13,6 @@ comment5.params=regNumber
 comment5.target=Meter\ getFromArchive(java.lang.String)
 comment6.params=regNumber\ placement
 comment6.target=boolean\ changePlacement(java.lang.String,\ java.lang.String)
-numComments=7
+comment7.params=regNumber
+comment7.target=boolean\ changeWorks(java.lang.String)
+numComments=8

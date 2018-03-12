@@ -53,7 +53,7 @@ public class MeterArchive
         }
         return null;
     }
-    
+
     public boolean changePlacement(String regNumber, String placement)
     {
         for(int i = 0; i < archive.size(); i++)
@@ -63,7 +63,24 @@ public class MeterArchive
             if(regNumber.equals(list.getRegNumber()))
             {
                 archive.get(i).setPlacement(placement);
-                
+
+                System.out.println(list);              
+                return true;                                         
+            }
+        }
+        return false;
+    }
+
+    public boolean changeWorks(String regNumber)
+    {
+        for(int i = 0; i < archive.size(); i++)
+        {
+            Meter list = archive.get(i);
+
+            if(regNumber.equals(list.getRegNumber()))
+            {
+                archive.get(i).setWorks(false);
+
                 System.out.println(list);              
                 return true;                                         
             }
