@@ -18,7 +18,26 @@ public class Weight extends Meter
         setLeastWeight(leastWeight);
         setMostWeight(mostWeight);
     }
-     
+    
+    @Override
+    public boolean equals(Object o){
+         
+        if(super.equals(o) == true)
+        {
+            return true;
+        }
+        if(leastWeight == (((Weight) o).getLeastWeight()))
+        {
+            return true;
+        }
+        if(mostWeight == (((Weight) o).getMostWeight()))
+        {
+            return true;
+        }
+        return false;
+        
+    }
+    
     public void display()
     {
         System.out.println(toString());

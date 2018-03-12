@@ -33,15 +33,32 @@ public class Meter
        }
     }
     
+    @Override
     public boolean equals(Object o){
+        
         if(this == o)
         {
             return true;
         }
-        else
+        if(o == null)
         {
             return false;
+        }        
+        if(regNumber.equals(((Meter) o).getRegNumber()))
+        {
+            return true;
         }
+        if(placement.equals(((Meter)o).getPlacement()))
+        {
+            return true;
+        }
+        if(works == true)
+        {
+            return true;
+        }
+        
+        return false;
+        
     }
     
     public void setRegNumber(String regNumber){

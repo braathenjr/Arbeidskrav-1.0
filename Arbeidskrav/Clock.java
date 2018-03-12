@@ -21,6 +21,21 @@ public class Clock extends Meter
        return super.toString() + "\nMin sec: " + getSeconds();
     }
     
+    @Override
+    public boolean equals(Object o){
+         
+        if(super.equals(o) == true)
+        {
+            return true;
+        }
+        if(seconds == (((Clock) o).getSeconds()))
+        {
+            return true;
+        }
+        return false;
+        
+    }
+    
     public void setSeconds(double seconds){
         this.seconds = seconds;
     }

@@ -20,6 +20,24 @@ public class Thermometer extends Meter
         setHighest(highest);
     }
     
+    @Override
+    public boolean equals(Object o){
+         
+        if(super.equals(o) == true)
+        {
+            return true;
+        }
+        if(lowest == (((Thermometer) o).getLowest()))
+        {
+            return true;
+        }
+        if(highest == (((Thermometer) o).getHighest()))
+        {
+            return true;
+        }
+        return false;
+        
+    }
     public String toString(){
        return super.toString() + "\nLowest temperature: " + getLowest() +"\nHighest temperature: " + getHighest();
     }
