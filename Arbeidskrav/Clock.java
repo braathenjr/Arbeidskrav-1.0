@@ -24,9 +24,9 @@ public class Clock extends Meter
     @Override
     public boolean equals(Object o){
          
-        if(super.equals(o) == true)
+        if(!super.equals(o))
         {
-            return true;
+            return false;
         }
         if(seconds == (((Clock) o).getSeconds()))
         {

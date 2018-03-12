@@ -10,32 +10,32 @@ public class Meter
     private String regNumber;
     private String placement;
     private boolean works;
-    
+
     public Meter(){
-        
+
     }
-    
+
     public Meter(String regNumber, String placement, boolean works){
         setRegNumber(regNumber);
         setPlacement(placement);
         setWorks(works);
     }
-    
+
     public String toString(){
-       String text = "regNumber: " + getRegNumber() + "\nPlacement:" + getPlacement();
-       if(works == true)
-       { 
-           return text + "\nStatus: i orden";
-       }
-       else
-       {
-           return text + "\nStatus: i ustand";
-       }
+        String text = "regNumber: " + getRegNumber() + "\nPlacement: " + getPlacement();
+        if(works == true)
+        { 
+            return text + "\nStatus: i orden";
+        }
+        else
+        {
+            return text + "\nStatus: i ustand";
+        }
     }
-    
+
     @Override
     public boolean equals(Object o){
-        
+
         if(this == o)
         {
             return true;
@@ -52,35 +52,35 @@ public class Meter
         {
             return true;
         }
-        if(works == true)
+        if(works == (((Meter)o).isWorks()))
         {
             return true;
         }
-        
-        return false;
-        
+        else{
+            return false;
+        }
     }
-    
+
     public void setRegNumber(String regNumber){
         this.regNumber = regNumber;
     }
-    
+
     public String getRegNumber(){
         return regNumber;
     }
-    
+
     public void setPlacement(String placement){
         this.placement = placement;
     }
-    
+
     public String getPlacement(){
         return placement;
     }
-    
+
     public void setWorks(boolean works){
         this.works = works;
     }
-    
+
     public boolean isWorks(){
         return works;
     }
