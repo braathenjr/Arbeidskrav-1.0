@@ -19,8 +19,15 @@ public class MeterArchive
     }
 
     public void display()
-    {
-        System.out.println(archive);
+    { 
+        StringBuilder sb = new StringBuilder();
+        for (Meter s : archive)
+        {
+            sb.append(s);
+            sb.append("\t");
+        }
+
+        System.out.println(sb.toString());
     }
 
     public boolean deleteFromArchive(String regNumber)
@@ -85,6 +92,5 @@ public class MeterArchive
         }
         return false;
     }
-    
 
 }

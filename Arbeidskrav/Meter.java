@@ -22,20 +22,19 @@ public class Meter
     }
 
     public String toString(){
-        String text = "regNumber: " + getRegNumber() + "\nPlacement: " + getPlacement();
+        String text = "\nregNumber: " + getRegNumber() + "\nPlacement: " + getPlacement();
         if(works == true)
         { 
-            return text + "\nStatus: i orden";
+            return text + "\nStatus: i orden\n";
         }
         else
         {
-            return text + "\nStatus: i ustand";
+            return text + "\nStatus: i ustand\n";
         }
     }
 
     @Override
     public boolean equals(Object o){
-
         if(this == o)
         {
             return true;
