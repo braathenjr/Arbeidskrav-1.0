@@ -24,7 +24,8 @@ public class MeterArchive
         for (Meter s : archive)
         {
             sb.append(s);
-            sb.append("\t");
+            //sb.append("\t");
+            
         }
 
         System.out.println(sb.toString());
@@ -38,7 +39,7 @@ public class MeterArchive
             if(regNumber.equals(list.getRegNumber()))
             {
                 archive.remove(i);
-                System.out.println("Sletter instrument med regnummer: " + list.getRegNumber());
+                System.out.println("\nSletter instrument med regnummer: " + list.getRegNumber());
                 return true;
             }
         }
@@ -54,7 +55,7 @@ public class MeterArchive
             if(regNumber.equals(list.getRegNumber()))
             {
                 archive.get(i);
-                //System.out.orintln("Henter instrument med regnummer " + list.getRegNumber());
+                System.out.println("\nHenter instrument med regnummer " + list.getRegNumber());
                 System.out.println(list);
                 return list;
             }
@@ -70,7 +71,7 @@ public class MeterArchive
             if(regNumber.equals(list.getRegNumber()))
             {
                 archive.get(i).setPlacement(placement);
-                //System.out.println("Endrer posisjon for instrument med regnummer: " + list.getRegNumber());
+                System.out.println("\nEndrer posisjon for instrument med regnummer: " + list.getRegNumber());
                 System.out.println(list);              
                 return true;                                         
             }
@@ -86,7 +87,7 @@ public class MeterArchive
             if(regNumber.equals(list.getRegNumber()))
             {
                 archive.get(i).setWorks(false);
-                System.out.println("Setter instrumentet med regnummer " + list.getRegNumber() + " til ikke i orden");              
+                System.out.println("\nSetter instrumentet med regnummer " + list.getRegNumber() + " til ikke i orden");              
                 return true;                                         
             }
         }
