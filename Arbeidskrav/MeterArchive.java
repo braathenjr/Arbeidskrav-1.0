@@ -16,7 +16,7 @@ public class MeterArchive
         changePlacement("C1000", "R101H13");
         changeWorks("W2000");
         getFromArchive("T2001");
-        
+        //Dette er en test
     }
 
     public void addArchive(Meter meter)
@@ -79,6 +79,7 @@ public class MeterArchive
                 System.out.println(list);              
                 return true;                                         
             }
+            
         }
         return false;
     }
@@ -112,9 +113,6 @@ public class MeterArchive
         archive.add(new Weight("W2000", "R101H9", true, 1.0, 2000.0));
         archive.add(new Weight("W2001", "R101H10", true, 1.0, 1000.0));      
         archive.add(new Weight("W2002", "R101H11", false, 100.0, 3000.0));
-        archive.add(new Weight("W2003", "R101H12", true, 0.5, 200.0));
-        
-        
-        
+        archive.add(new Weight("W2003", "R101H12", true, 0.5, 200.0));       
     }
 }
