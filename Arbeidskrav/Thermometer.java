@@ -14,12 +14,18 @@ public class Thermometer extends Meter
 
     }
 
-    public Thermometer(String regNumber, String placement, boolean works, double lowest, double highest){
+    /**
+     * Constructer of the Thermometer
+     * 
+     */public Thermometer(String regNumber, String placement, boolean works, double lowest, double highest){
         super(regNumber, placement, works);
         setLowest(lowest);
         setHighest(highest);
     }
     
+    /**
+     * 
+     */
     @Override
     public boolean equals(Object o){
          
@@ -38,22 +44,37 @@ public class Thermometer extends Meter
         return false;
         
     }
+    
+    /**
+     * Makes a String out of the variabels from Thermometer and Meter.
+     */
     public String toString(){
        return "\nThermometer" + super.toString() + "Lowest temperature (°C): " + getLowest() +"\nHighest temperature (°C): " + getHighest() +"\n";
     }
     
-    public void setHighest(double highest){
+    /**
+     * Set the Highest temperatur this Thermometer can measure.
+     */public void setHighest(double highest){
         this.highest = highest;
     }
-
+    
+    /**
+     * Gets the Highest temperatur this Thermometer can measure
+     */
     public double getHighest(){
         return highest;
     }
-
+    
+    /**
+     * Get the Lowest temperatur this Thermometer can measure
+     */
     public double getLowest(){
         return lowest;
     }
     
+    /**
+     * Set the Lowest temperatur this Thermometer can measure
+     */
     public void setLowest(double lowest){
         this.lowest = lowest;
     }

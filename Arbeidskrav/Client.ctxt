@@ -5,4 +5,5 @@ comment1.params=
 comment1.target=Client()
 comment2.params=
 comment2.target=void\ MainMethod()
+comment2.text=\n\ Creates\ an\ instance\ of\ MeterArchive,\ and\ calls\ the\ methods\ in\ its\ contructor.\n
 numComments=3

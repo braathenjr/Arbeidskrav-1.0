@@ -8,7 +8,10 @@ import java.util.ArrayList;
 public class MeterArchive
 {
     private ArrayList<Meter> archive;
-
+    
+    /**
+     * Constructing MeterArchive, and runs some of its methods.
+     */
     public MeterArchive(){
         archive = new ArrayList<>(); 
         archiveAdd();
@@ -18,12 +21,18 @@ public class MeterArchive
         getFromArchive("T2001");
         
     }
-
+    
+    /**
+     * Adds a specsific Meter object to the archive.
+     */
     public void addArchive(Meter meter)
     {
         archive.add(meter);
     }
-
+    
+    /**
+     * Display everything thats in archive.
+     */
     public void display()
     { 
         StringBuilder sb = new StringBuilder();
@@ -34,7 +43,10 @@ public class MeterArchive
 
         System.out.println(sb.toString());
     }
-
+    
+    /**
+     * Deletes an instrument form archive using its regNumber.
+     */
     public boolean deleteFromArchive(String regNumber)
     {
         for(int i = 0; i < archive.size(); i++)
@@ -50,7 +62,10 @@ public class MeterArchive
         }
         return false;
     }
-
+    
+    /**
+     * Gets all the info about an instrument from archive using its regNumber.
+     */
     public Meter getFromArchive(String regNumber)
     {
         for(int i = 0; i < archive.size(); i++)
@@ -66,7 +81,10 @@ public class MeterArchive
         }
         return null;
     }
-
+    
+    /**
+     * Change the placement of an instrument using its regNumber. And inputting the new placement.
+     */
     public boolean changePlacement(String regNumber, String placement)
     {
         for(int i = 0; i < archive.size(); i++)
@@ -83,7 +101,10 @@ public class MeterArchive
         }
         return false;
     }
-
+    
+    /**
+     * Change if the instrument works to not work using its regNumber.
+     */
     public boolean changeWorks(String regNumber)
     {
         for(int i = 0; i < archive.size(); i++)
@@ -100,6 +121,9 @@ public class MeterArchive
         return false;
     }
     
+    /**
+     * Adds diferent instrument to the archive.
+     */
     public void archiveAdd()
     {
         archive.add(new Clock("C1000", "R101H1", true, 0.01));
