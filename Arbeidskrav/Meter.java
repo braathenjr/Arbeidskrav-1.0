@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Meter here.
+ * Write a description of class Clock here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Martin Braathen
+ *
  */
 public class Meter
 {
@@ -12,13 +12,14 @@ public class Meter
     private boolean works;
 
     public Meter(){
-
+        
     }
 
     public Meter(String regNumber, String placement, boolean works){
         setRegNumber(regNumber);
         setPlacement(placement);
         setWorks(works);
+        
     }
 
     public String toString(){

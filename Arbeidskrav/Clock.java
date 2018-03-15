@@ -2,8 +2,8 @@
 /**
  * Write a description of class Clock here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Martin Braathen
+ *
  */
 public class Clock extends Meter
 {
@@ -18,7 +18,7 @@ public class Clock extends Meter
     }
     
     public String toString(){
-       return super.toString() + "\nMin sec: " + getSeconds();
+       return "\nClock" + super.toString() + "Min sec: " + getSeconds() +"\n";
     }
     
     @Override

@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Clock
-comment0.text=\n\ Write\ a\ description\ of\ class\ Clock\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ Write\ a\ description\ of\ class\ Clock\ here.\n\n\ @author\ Martin\ Braathen\n\n
 comment1.params=
 comment1.target=Clock()
 comment2.params=regNumber\ placement\ works\ seconds

@@ -1,16 +1,22 @@
 import java.util.ArrayList;
 /**
- * Write a description of class MeterArchive here.
+ * Write a description of class Clock here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Martin Braathen
+ *
  */
 public class MeterArchive
 {
     private ArrayList<Meter> archive;
 
     public MeterArchive(){
-        archive = new ArrayList<>();
+        archive = new ArrayList<>(); 
+        archiveAdd();
+        display();
+        changePlacement("C1000", "R101H5");
+        changeWorks("W2000");
+        getFromArchive("T2001");
+        
     }
 
     public void addArchive(Meter meter)
@@ -23,9 +29,7 @@ public class MeterArchive
         StringBuilder sb = new StringBuilder();
         for (Meter s : archive)
         {
-            sb.append(s);
-            //sb.append("\t");
-            
+            sb.append(s);                      
         }
 
         System.out.println(sb.toString());
@@ -72,7 +76,7 @@ public class MeterArchive
             {
                 archive.get(i).setPlacement(placement);
                 System.out.println("\nEndrer posisjon for instrument med regnummer: " + list.getRegNumber());
-                System.out.println(list);              
+                //System.out.println(list);              
                 return true;                                         
             }
         }
@@ -87,11 +91,29 @@ public class MeterArchive
             if(regNumber.equals(list.getRegNumber()))
             {
                 archive.get(i).setWorks(false);
-                System.out.println("\nSetter instrumentet med regnummer " + list.getRegNumber() + " til ikke i orden");              
+                System.out.println("\nSetter instrumentet med regNummer " + list.getRegNumber() + " til ikke i orden");              
                 return true;                                         
             }
         }
         return false;
     }
-
+    
+    public void archiveAdd()
+    {
+        archive.add(new Clock("C1000", "R101H1", true, 0.01));
+        archive.add(new Clock("C1001", "R101H2", true, 0.05));
+        archive.add(new Clock("C1002", "R101H3", true, 0.01));
+        archive.add(new Clock("C1003", "R101H4", false, 0.02));
+        archive.add(new Thermometer("T2000", "R101H5", true, 1.0, 200.0));
+        archive.add(new Thermometer("T2001", "R101H6", true, 1.0, 300.0));     
+        archive.add(new Thermometer("T2002", "R101H7", true, 0.5, 200.0));
+        archive.add(new Thermometer("T2003", "R101H8", true, 1.0, 200.0));
+        archive.add(new Weight("W2000", "R101H9", true, 1.0, 2000.0));
+        archive.add(new Weight("W2001", "R101H10", true, 1.0, 1000.0));      
+        archive.add(new Weight("W2002", "R101H11", false, 100.0, 3000.0));
+        archive.add(new Weight("W2003", "R101H12", true, 0.5, 200.0));
+        
+        
+        
+    }
 }

@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Client here.
+ * Write a description of class Clock here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Martin Braathen
+ *
  */
 public class Client
 {
@@ -14,6 +14,6 @@ public class Client
     
     public void MainMethod()
     {
-        MeterArchive meterArchive = new MeterArchive();
+        MeterArchive meterArchive = new MeterArchive();        
     }
 }

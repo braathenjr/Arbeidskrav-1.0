@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=MeterArchive
-comment0.text=\n\ Write\ a\ description\ of\ class\ MeterArchive\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ Write\ a\ description\ of\ class\ Clock\ here.\n\n\ @author\ Martin\ Braathen\n\n
 comment1.params=
 comment1.target=MeterArchive()
 comment2.params=meter
@@ -15,4 +15,6 @@ comment6.params=regNumber\ placement
 comment6.target=boolean\ changePlacement(java.lang.String,\ java.lang.String)
 comment7.params=regNumber
 comment7.target=boolean\ changeWorks(java.lang.String)
-numComments=8
+comment8.params=
+comment8.target=void\ archiveAdd()
+numComments=9

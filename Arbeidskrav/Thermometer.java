@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Thermometer here.
+ * Write a description of class Clock here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Martin Braathen
+ *
  */
 public class Thermometer extends Meter
 {
@@ -39,7 +39,7 @@ public class Thermometer extends Meter
         
     }
     public String toString(){
-       return super.toString() + "\nLowest temperature: " + getLowest() +"\nHighest temperature: " + getHighest();
+       return "\nThermometer" + super.toString() + "Lowest temperature (°C): " + getLowest() +"\nHighest temperature (°C): " + getHighest() +"\n";
     }
     
     public void setHighest(double highest){

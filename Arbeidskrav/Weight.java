@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Weight here.
+ * Write a description of class Clock here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Martin Braathen
+ *
  */
 public class Weight extends Meter
 {
@@ -44,7 +44,7 @@ public class Weight extends Meter
     }
     
     public String toString(){
-       return super.toString() + "\nLeast Weight: " + getLeastWeight() +"\nMost weight: " + getMostWeight();
+       return "\nWeight" + super.toString() + "Least Weight: " + getLeastWeight() +" gram" + "\nMost weight: " + getMostWeight()+ " gram\n";
     }
     
     public void setLeastWeight(double leastWeight){
