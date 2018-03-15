@@ -16,7 +16,7 @@ public class MeterArchive
         changePlacement("C1000", "R101H13");
         changeWorks("W2000");
         getFromArchive("T2001");
-        //Dette er en test
+        
     }
 
     public void addArchive(Meter meter)
