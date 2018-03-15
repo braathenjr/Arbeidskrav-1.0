@@ -13,7 +13,7 @@ public class MeterArchive
         archive = new ArrayList<>(); 
         archiveAdd();
         display();
-        changePlacement("C1000", "R101H5");
+        changePlacement("C1000", "R101H13");
         changeWorks("W2000");
         getFromArchive("T2001");
         
@@ -44,10 +44,10 @@ public class MeterArchive
             {
                 archive.remove(i);
                 System.out.println("\nSletter instrument med regnummer: " + list.getRegNumber());
+                System.out.println(list);
                 return true;
             }
         }
-        //System.out.println(": Objekt er ikke slettet");
         return false;
     }
 
@@ -76,7 +76,7 @@ public class MeterArchive
             {
                 archive.get(i).setPlacement(placement);
                 System.out.println("\nEndrer posisjon for instrument med regnummer: " + list.getRegNumber());
-                //System.out.println(list);              
+                System.out.println(list);              
                 return true;                                         
             }
         }
@@ -92,6 +92,7 @@ public class MeterArchive
             {
                 archive.get(i).setWorks(false);
                 System.out.println("\nSetter instrumentet med regNummer " + list.getRegNumber() + " til ikke i orden");              
+                System.out.println(list);
                 return true;                                         
             }
         }
