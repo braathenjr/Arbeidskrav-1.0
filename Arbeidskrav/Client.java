@@ -1,13 +1,14 @@
 
 /**
- * Write a description of class Clock here.
  *
  * @author Martin Braathen
  *
  */
 public class Client
 {
-    
+    /**
+     * Constructing an empty instance of Client.
+     */
     public Client()
     {
     }

@@ -1,6 +1,5 @@
 
 /**
- * Write a description of class Clock here.
  *
  * @author Martin Braathen
  *
@@ -9,7 +8,13 @@ public class Clock extends Meter
 {
     private double seconds;
     
+    /**
+     * Creates and instance of Clock, with standard values.
+     */
     public Clock(){
+        super("N000", "N000", true);
+        seconds = 0.1;
+        
     }
     
     /**
@@ -27,9 +32,6 @@ public class Clock extends Meter
        return "\nClock" + super.toString() + "Min sec: " + getSeconds() +"\n";
     }
     
-    /**
-     * 
-     */
     @Override
     public boolean equals(Object o){
          

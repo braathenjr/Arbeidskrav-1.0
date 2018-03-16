@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=MeterArchive
-comment0.text=\n\ Write\ a\ description\ of\ class\ Clock\ here.\n\n\ @author\ Martin\ Braathen\n\n
+comment0.text=\n\n\ @author\ Martin\ Braathen\n\n
 comment1.params=
 comment1.target=MeterArchive()
 comment1.text=\n\ Constructing\ MeterArchive,\ and\ runs\ some\ of\ its\ methods.\n

@@ -1,6 +1,5 @@
 
 /**
- * Write a description of class Clock here.
  *
  * @author Martin Braathen
  *
@@ -10,7 +9,13 @@ public class Weight extends Meter
     private double leastWeight;
     private double mostWeight;
     
+    /**
+     * Creates and instance of Weight, with standard values.
+     */
     public Weight(){
+        super("N000", "N000", true);
+        leastWeight = 0.0;
+        mostWeight = 100.0;
     }           
     
     /**
@@ -22,9 +27,6 @@ public class Weight extends Meter
         setMostWeight(mostWeight);
     }
     
-    /**
-     * 
-     */
     @Override
     public boolean equals(Object o){
          

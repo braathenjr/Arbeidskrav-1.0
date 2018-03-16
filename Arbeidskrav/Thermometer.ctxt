@@ -1,14 +1,14 @@
 #BlueJ class context
 comment0.target=Thermometer
-comment0.text=\n\ Write\ a\ description\ of\ class\ Clock\ here.\n\n\ @author\ Martin\ Braathen\n\n
+comment0.text=\n\n\ @author\ Martin\ Braathen\n\n
 comment1.params=
 comment1.target=Thermometer()
+comment1.text=\n\ Creates\ and\ instance\ of\ Thermometer,\ with\ standard\ values.\n
 comment2.params=regNumber\ placement\ works\ lowest\ highest
 comment2.target=Thermometer(java.lang.String,\ java.lang.String,\ boolean,\ double,\ double)
 comment2.text=\n\ Constructer\ of\ the\ Thermometer\n\ \n
 comment3.params=o
 comment3.target=boolean\ equals(java.lang.Object)
-comment3.text=\n\ \n
 comment4.params=
 comment4.target=java.lang.String\ toString()
 comment4.text=\n\ Makes\ a\ String\ out\ of\ the\ variabels\ from\ Thermometer\ and\ Meter.\n

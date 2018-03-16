@@ -1,6 +1,5 @@
 
 /**
- * Write a description of class Clock here.
  *
  * @author Martin Braathen
  *
@@ -11,8 +10,13 @@ public class Meter
     private String placement;
     private boolean works;
 
+    /**
+     * Creates and instance of Meter, with standard values.
+     */
     public Meter(){
-        
+        regNumber = "N000";
+        placement = "N000";
+        works = true;
     }
     
     /**
@@ -40,9 +44,6 @@ public class Meter
         }
     }
     
-    /**
-     * 
-     */
     @Override
     public boolean equals(Object o){
         if(this == o)

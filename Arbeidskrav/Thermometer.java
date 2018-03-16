@@ -1,6 +1,5 @@
 
 /**
- * Write a description of class Clock here.
  *
  * @author Martin Braathen
  *
@@ -10,8 +9,13 @@ public class Thermometer extends Meter
     private double lowest;
     private double highest;
 
+    /**
+     * Creates and instance of Thermometer, with standard values.
+     */
     public Thermometer(){
-
+        super("N000", "N000", true);
+        lowest = 0.0;
+        highest = 100.0;
     }
 
     /**
@@ -23,9 +27,6 @@ public class Thermometer extends Meter
         setHighest(highest);
     }
     
-    /**
-     * 
-     */
     @Override
     public boolean equals(Object o){
          
