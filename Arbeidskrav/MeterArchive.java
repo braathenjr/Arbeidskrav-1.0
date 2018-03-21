@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class MeterArchive
 {
     private ArrayList<Meter> archive;
-    
+
     /**
      * Constructing MeterArchive, and runs some of its methods.
      */
@@ -18,9 +18,10 @@ public class MeterArchive
         changePlacement("C1000", "R101H13");
         changeWorks("W2000");
         getFromArchive("T2001");
-        
+        deleteFromArchive("T2000");
+
     }
-    
+
     /**
      * Adds a specsific Meter object to the archive.
      */
@@ -28,21 +29,18 @@ public class MeterArchive
     {
         archive.add(meter);
     }
-    
+
     /**
      * Display everything thats in archive.
      */
     public void display()
     { 
-        StringBuilder sb = new StringBuilder();
-        for (Meter s : archive)
+        for (Meter m : archive)
         {
-            sb.append(s);                      
+            System.out.println(m);                      
         }
-
-        System.out.println(sb.toString());
     }
-    
+
     /**
      * Deletes an instrument form archive using its regNumber.
      */
@@ -61,7 +59,7 @@ public class MeterArchive
         }
         return false;
     }
-    
+
     /**
      * Gets all the info about an instrument from archive using its regNumber.
      */
@@ -80,7 +78,7 @@ public class MeterArchive
         }
         return null;
     }
-    
+
     /**
      * Change the placement of an instrument using its regNumber. And inputting the new placement.
      */
@@ -96,11 +94,11 @@ public class MeterArchive
                 System.out.println(list);              
                 return true;                                         
             }
-            
+
         }
         return false;
     }
-    
+
     /**
      * Change if the instrument works to not work using its regNumber.
      */
@@ -119,9 +117,9 @@ public class MeterArchive
         }
         return false;
     }
-    
+
     /**
-     * Adds diferent instrument to the archive.
+     * Adds different instrument to the archive.
      */
     public void archiveAdd()
     {

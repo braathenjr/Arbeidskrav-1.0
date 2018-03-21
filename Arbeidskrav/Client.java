@@ -18,6 +18,6 @@ public class Client
      */
     public void MainMethod()
     {
-        MeterArchive meterArchive = new MeterArchive();        
+        MeterArchive meterArchive = new MeterArchive();
     }
 }
